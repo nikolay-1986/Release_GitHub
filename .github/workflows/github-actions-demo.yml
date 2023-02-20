@@ -17,8 +17,8 @@ jobs:
       - run: echo "🍏 This job's status is ${{ job.status }}."
   deployment:
     runs-on: ubuntu-latest
-    environment: production
-    concurrency: production
+    environment: GitHub.com_Env
+    concurrency: GitHub.com_Env
     steps:
       - name: deploy
         uses: actions/checkout@v2
